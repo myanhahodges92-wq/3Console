@@ -1,0 +1,1 @@
+This file is a non-hardware accessable web browser console built around three.js development specifically r86dev. But don't worry if you don't have the latest version the software already contains the latest software version and allows you to play games directly from the library locally without any extra headaches.
