@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+>
+
+<meta
+    name="theme-color"
+    content="#07090d"
+>
+
+<meta
+    name="mobile-web-app-capable"
+    content="yes"
+>
+
+<meta
+    name="apple-mobile-web-app-capable"
+    content="yes"
+>
+
+<title>3Console</title>
+
+<link
+    rel="stylesheet"
+    href="./style.css"
+>
+
+<link
+    rel="manifest"
+    href="./manifest.json"
+>
+
+</head><body>
+    <div id="console-app">    <header id="console-header">
+
+        <div id="console-brand">
+
+            <div class="brand-mark" aria-hidden="true">
+                <span>3</span>
+            </div>
+
+            <div class="brand-copy">
+                <h1>3Console</h1>
+
+                <span id="console-version">
+                    R86dev
+                </span>
+            </div>
+
+        </div>
+
+        <div class="console-status">
+
+            <span class="status-indicator"></span>
+
+            <span class="status-label">
+                SYSTEM READY
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main id="console-main">
+
+        <section id="library-screen">
+
+            <div class="console-intro">
+
+                <div class="intro-copy">
+
+                    <span class="eyebrow">
+                        3CONSOLE
+                    </span>
+
+                    <h2>
+                        Your Library
+                    </h2>
+
+                    <p>
+                        Play your installed games
+                        from one place.
+                    </p>
+
+                </div>
+
+                <button
+                    id="add-game-button"
+                    type="button"
+                >
+                    Add Game
+                </button>
+
+            </div>
+
+
+            <div class="library-bar">
+
+                <div class="library-title">
+                    <span class="library-dot"></span>
+
+                    <span>
+                        INSTALLED
+                    </span>
+                </div>
+
+                <div class="library-line"></div>
+
+                <div class="library-system">
+                    LOCAL LIBRARY
+                </div>
+
+            </div>
+
+
+            <div
+                id="game-library"
+                aria-live="polite"
+            >
+                <div id="empty-library">
+
+                    <div
+                        class="empty-console-mark"
+                        aria-hidden="true"
+                    >
+                        <span>3</span>
+                    </div>
+
+                    <span class="empty-label">
+                        LIBRARY EMPTY
+                    </span>
+
+                    <h3>
+                        No Games Installed
+                    </h3>
+
+                    <p>
+                        Import a 3Console game
+                        package to begin building
+                        your library.
+                    </p>
+
+                    <div class="empty-hint">
+                        ZIP GAME PACKAGE
+                        <span>•</span>
+                        LOCAL STORAGE
+                    </div>
+
+                </div>
+            </div>
+
+
+            <footer class="console-footer">
+
+                <div>
+                    3CONSOLE PLATFORM
+                </div>
+
+                <div>
+                    R86DEV
+                </div>
+
+                <div>
+                    LOCAL SYSTEM
+                </div>
+
+            </footer>
+
+        </section>
+
+
+        <section
+            id="game-screen"
+            hidden
+        >
+
+            <div id="game-container"></div>
+
+            <div id="game-controls">
+
+                <button
+                    id="game-back-button"
+                    type="button"
+                >
+                    Back
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <input
+        id="game-file-input"
+        type="file"
+        accept=".zip,application/zip"
+        hidden
+    >
+
+</div>
+
+
+<script
+    type="module"
+    src="./3Console.js"
+></script>
+
+</body>
+</html>
